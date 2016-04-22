@@ -2,28 +2,29 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
+<link href="css/style.css" rel="stylesheet">
 <title>Страница каталога - Глейси</title>
 </head>
 <body>
   <header class="main-header">
     <div class="container">
       <div class="logo">
-        <img alt="" src="http://placehold.it/150x100" height="50" width="250">
+        <a href="/"><img alt="" src="/img/Logo.png" height="63" width="153"></a>
       </div>
 
       <nav class="main-navigation">
         <ul class="main-menu">
-          <li><a href="">Каталог</a></li>
+          <li><a href="">Каталог</a>
+            <ul class="catalog-popup">
+              <li><a href="">Новинки</a></li>
+              <li><a href="">Сливочное</a></li>
+              <li><a href="">Щербеты</a></li>
+              <li><a href="">Фруктовый лед</a></li>
+              <li><a href="">Мелорин</a></li>
+            </ul>
+          </li>
           <li><a href="">Доставка и оплата</a></li>
           <li><a href="">О компании</a></li>
-        </ul>
-
-        <ul class="catalog-popup">
-          <li><a href="">Новинки</a></li>
-          <li><a href="">Сливочное</a></li>
-          <li><a href="">Щербеты</a></li>
-          <li><a href="">Фруктовый лед</a></li>
-          <li><a href="">Мелорин</a></li>
         </ul>
       </nav>
 
@@ -123,7 +124,7 @@
       <div class="cat-filters">
         <form action="#">
           <div class="sort-by">
-            <p>Сортировка</p>
+            <h3>Сортировка</h3>>
             <select name="sort-by" id="sort-by">
               <option value="by-popular">по популярности</option>
               <option value="by-price">по цене</option>
@@ -131,41 +132,59 @@
           </div>
 
           <div class="sort-price">
-            <p>Цена</p>
+            <h3>Цена</h3>
             <input type="range" name="sort-price" id="sort-price">
           </div>
 
           <div class="sort-fat">
-            <p>Жирность</p>
-            <input type="radio" name="fat" id="sort-fat1" value="0">
-            <label for="sort-fat1">0 %</label>
+            <h3>Жирность</h3>
+            <div class="sort-fat-radio">
+              <input type="radio" name="fat" id="sort-fat1" value="0">
+              <label for="sort-fat1">0 %</label>
+            </div>
 
-            <input type="radio" name="fat" id="sort-fat2" value="10" checked>
-            <label for="sort-fat2">До 10 %</label>
+            <div class="sort-fat-radio">
+              <input type="radio" name="fat" id="sort-fat2" value="10" checked>
+              <label for="sort-fat2">До 10 %</label>
+            </div>
 
-            <input type="radio" name="fat" id="sort-fat3" value="30">
-            <label for="sort-fat3">До 30 %</label>
+            <div class="sort-fat-radio">
+              <input type="radio" name="fat" id="sort-fat3" value="30">
+              <label for="sort-fat3">До 30 %</label>
+            </div>
 
-            <input type="radio" name="fat" id="sort-fat4" value="over">
-            <label for="sort-fat4">Свыше 30 %</label>
+            <div class="sort-fat-radio">
+              <input type="radio" name="fat" id="sort-fat4" value="over">
+              <label for="sort-fat4">Свыше 30 %</label>
+            </div>
           </div>
 
           <div class="sort-extender">
-            <p>Наполнители</p>
-            <input type="checkbox" name="sort-extender" id="sort-extender1" checked>
-            <label for="sort-extender1">Шоколадные</label>
+            <h3>Наполнители</h3>
+            <div class="sort-extender-checkbox">
+              <input type="checkbox" name="sort-extender" id="sort-extender1" checked>
+              <label for="sort-extender1">Шоколадные</label>
+            </div>
 
-            <input type="checkbox" name="sort-extender" id="sort-extender2" checked>
-            <label for="sort-extender2">Сахарные присыпки</label>
+            <div class="sort-extender-checkbox">
+              <input type="checkbox" name="sort-extender" id="sort-extender2" checked>
+              <label for="sort-extender2">Сахарные присыпки</label>
+            </div>
 
-            <input type="checkbox" name="sort-extender" id="sort-extender3">
-            <label for="sort-extender3">Фрукты</label>
+            <div class="sort-extender-checkbox">
+              <input type="checkbox" name="sort-extender" id="sort-extender3">
+              <label for="sort-extender3">Фрукты</label>
+            </div>
 
-            <input type="checkbox" name="sort-extender" id="sort-extender4">
-            <label for="sort-extender4">Сиропы</label>
+            <div class="sort-extender-checkbox">
+              <input type="checkbox" name="sort-extender" id="sort-extender4">
+              <label for="sort-extender4">Сиропы</label>
+            </div>
 
-            <input type="checkbox" name="sort-extender" id="sort-extender5">
-            <label for="sort-extender5">Джемы</label>
+            <div class="sort-extender-checkbox">
+              <input type="checkbox" name="sort-extender" id="sort-extender5">
+              <label for="sort-extender5">Джемы</label>
+            </div>
           </div>
 
           <div class="btn-submit">
@@ -176,29 +195,87 @@
 
       <section class="products">
         <div class="product-item">
-          <img alt="" class="product-image" src="http://placehold.it/150x100" height="150" width="150">
+          <img alt="" class="product-image" src="/img/1.png" height="267" width="267">
           <div class="product-price">310 Рублей/кг</div>
           <a class="product-name" href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        </div>
-
-        <div class="product-item-hover">
-          <a class="product-name" href="">Быстрый просмотр</a>
+          <a class="btn-quick-view" href="">Быстрый просмотр</a>
         </div>
 
         <div class="product-item">
-          <img alt="" class="product-image" src="http://placehold.it/150x100" height="150" width="150">
+          <img alt="" class="product-image" src="/img/2.png" height="267" width="267">
           <div class="product-price">380 Рублей/кг</div>
           <a class="product-name" href="">Сливочно-кофейное с кусочками шоколада</a>
+          <a class="btn-quick-view" href="">Быстрый просмотр</a>
         </div>
+
         <div class="product-item">
-          <img alt="" class="product-image" src="http://placehold.it/150x100" height="150" width="150">
+          <img alt="" class="product-image" src="/img/3.png" height="267" width="267">
           <div class="product-price">355 Рублей/кг</div>
           <a class="product-name" href="">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          <a class="btn-quick-view" href="">Быстрый просмотр</a>
         </div>
+
         <div class="product-item">
-          <img alt="" class="product-image" src="http://placehold.it/150x100" height="150" width="150">
+          <img alt="" class="product-image" src="/img/4.png" height="267" width="267">
           <div class="product-price">415 Рублей/кг</div>
           <a class="product-name" href="">Сливочное крем-брюле с карамельной подливкой</a>
+          <a class="btn-quick-view" href="">Быстрый просмотр</a>
+        </div>
+
+        <div class="product-item">
+          <img alt="" class="product-image" src="/img/5.png" height="267" width="267">
+          <div class="product-price">325 Рублей/кг</div>
+          <a class="product-name" href="">Сливочное с брусничным джемом</a>
+          <a class="btn-quick-view" href="">Быстрый просмотр</a>
+        </div>
+
+        <div class="product-item">
+          <img alt="" class="product-image" src="/img/6.png" height="267" width="267">
+          <div class="product-price">410 Рублей/кг</div>
+          <a class="product-name" href="">Сливочно-черничное с цельными ягодами черники</a>
+          <a class="btn-quick-view" href="">Быстрый просмотр</a>
+        </div>
+
+        <div class="product-item">
+          <img alt="" class="product-image" src="/img/7.png" height="267" width="267">
+          <div class="product-price">375 Рублей/кг</div>
+          <a class="product-name" href="">Сливочно-лимонное с карамельной присыпкой</a>
+          <a class="btn-quick-view" href="">Быстрый просмотр</a>
+        </div>
+
+        <div class="product-item">
+          <img alt="" class="product-image" src="/img/8.png" height="267" width="267">
+          <div class="product-price">320 Рублей/кг</div>
+          <a class="product-name" href="">Сливочное с шоколадной стружкой</a>
+          <a class="btn-quick-view" href="">Быстрый просмотр</a>
+        </div>
+
+        <div class="product-item">
+          <img alt="" class="product-image" src="/img/9.png" height="267" width="267">
+          <div class="product-price">440 Рублей/кг</div>
+          <a class="product-name" href="">Сливочно-ванильное с кусочками шоколада</a>
+          <a class="btn-quick-view" href="">Быстрый просмотр</a>
+        </div>
+
+        <div class="product-item">
+          <img alt="" class="product-image" src="/img/10.png" height="267" width="267">
+          <div class="product-price">435 Рублей/кг</div>
+          <a class="product-name" href="">Сливочноe с ментоловым сиропом</a>
+          <a class="btn-quick-view" href="">Быстрый просмотр</a>
+        </div>
+
+        <div class="product-item">
+          <img alt="" class="product-image" src="/img/11.png" height="267" width="267">
+          <div class="product-price">355 Рублей/кг</div>
+          <a class="product-name" href="">Сливочное с кусочками черного шоколада</a>
+          <a class="btn-quick-view" href="">Быстрый просмотр</a>
+          </div>
+
+        <div class="product-item">
+          <img alt="" class="product-image" src="/img/12.png" height="267" width="267">
+          <div class="product-price">420 Рублей/кг</div>
+          <a class="product-name" href="">Сливочное с мятным сиропом</a>
+          <a class="btn-quick-view" href="">Быстрый просмотр</a>
         </div>
       </section>
 
