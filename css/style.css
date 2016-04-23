@@ -1,22 +1,19 @@
 body {
   font-size: 16px;
   line-height: 22px;
-  color: #323232;
+  color: #fff;
   font-family: "Roboto";
-  background-color: lightgray;
+  background-color: #849d8f;
 }
 
 h2 {
   font-size: 35px;
-
 }
 
 h1 {
   font-size: 24px;
-
 }
 
-.product-price {
-  font-size: 45px;
-  font-weight: bold;
+a {
+  color: white;
 }
