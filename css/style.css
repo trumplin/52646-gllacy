@@ -17,3 +17,169 @@ h1 {
 a {
   color: white;
 }
+
+/*
+  Хедер
+*/
+.container {
+  width: 860px;
+  margin: 0px auto;
+  vertical-align: top;
+}
+
+.logo {
+  width: 154px;
+  height: 64px;
+  float: left;
+}
+
+.main-menu{
+ display: inline-block;
+}
+.main-menu li{
+  display: inline;
+  margin-right: 20px;
+}
+
+.user-block{
+  float: right;
+}
+
+.search, .login, .basket{
+  display: inline-block;
+}
+
+.search-popup{
+  display: none;
+}
+
+.catalog-popup {
+  display: none;
+}
+
+.login-popup{
+  display: none;
+}
+
+.forgot-password {
+  display: none;
+}
+
+.new-registration {
+  display: none;
+}
+
+.basket-popup{
+  display: none;
+}
+
+.breadcrumbs li{
+  display: inline;
+}
+
+.header-contacts{
+  float: right;
+}
+
+/*
+  Контент
+*/
+
+.cat-filters {
+  font-size: 0px;
+  margin-bottom: 50px;
+}
+
+.cat-filters div{
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.products{
+  font-size: 0px;
+}
+
+.product-item {
+  display: inline-block;
+  width: 200px;
+  font-size: 15px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  position: relative;
+  vertical-align: top;
+
+}
+
+.product-item:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.product-item .product-image {
+  width: 200px;
+  height: 200px;
+}
+
+.product-item .product-price {
+  font-size: 26px;
+  font-weight: 800;
+  position: absolute;
+  top: 145px;
+  left: 0px;
+}
+
+.product-item .product-name {
+  display: inline-block;
+  text-align: center;
+}
+
+.product-item .btn-quick-view {
+  display: none;
+}
+
+.cat-pagination li {
+  display: inline;
+}
+
+
+.clearfix:after{
+  content:'';
+  display:table;
+  clear:both;
+}
+
+
+/*
+  Футер
+*/
+
+
+.main-footer .container {
+  width: 880px;
+  height: 79px;
+  margin: 0px auto;
+}
+
+.footer-social{
+  float: left;
+}
+.main-footer ul {
+  display: inline-block;
+  font-size: 0px;
+}
+
+.main-footer li {
+  font-size: 12px;
+}
+.footer-copyright {
+  float: right;
+  width: 189px;
+  height: 59px;
+}
+.footer-copyright .footer-logo {
+  width: 108px;
+  height: 38px;
+}
+.footer-copyright p {
+  font-size: 12px;
+}

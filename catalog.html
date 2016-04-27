@@ -7,12 +7,12 @@
 </head>
 <body>
   <header class="main-header">
-    <div class="container">
+    <div class="container clearfix">
       <div class="logo">
         <a href="/"><img alt="" src="/img/Logo.png" height="63" width="153"></a>
       </div>
 
-      <nav class="main-navigation">
+      <nav class="main-navigation clearfix">
         <ul class="main-menu">
           <li><a href="">Каталог</a>
             <ul class="catalog-popup">
@@ -95,7 +95,7 @@
         </div>
       </div>
 
-      <div class="header-contacts">
+      <div class="header-contacts clearfix">
         <div class="shedule">
           <p>С 10 до 20, ежедневно</p>
         </div>
@@ -104,11 +104,7 @@
           <p>8 812 450-25-25</p>
         </div>
       </div>
-    </div>
-  </header>
 
-  <main class="content">
-    <div class="container">
       <div class="breadcrumbs">
         <ul>
           <li><a href="">Главная</a></li>
@@ -116,7 +112,11 @@
           <li>Сливочное</li>
         </ul>
       </div>
+    </div>
+  </header>
 
+  <main class="content">
+    <div class="container clearfix">
       <div class="main-header">
         <h1>Сливочное мороженное</h1>
       </div>
@@ -124,7 +124,7 @@
       <div class="cat-filters">
         <form action="#">
           <div class="sort-by">
-            <h3>Сортировка</h3>>
+            <h3>Сортировка</h3>
             <select name="sort-by" id="sort-by">
               <option value="by-popular">по популярности</option>
               <option value="by-price">по цене</option>
@@ -279,7 +279,7 @@
         </div>
       </section>
 
-      <div class="cat-pagination">
+      <div class="cat-pagination clearfix">
         <ul>
           <li>1</li>
           <li><a href="">2</a></li>
@@ -301,16 +301,19 @@
       </section>
 
       <section class="footer-menu">
-        <ul>
+        <ul class="menu-left">
           <li>Для поставщиков</li>
           <li>О производстве</li>
+        </ul>
+
+        <ul class="menu-right">
           <li>Наши документы</li>
           <li>Экологические стандарты</li>
         </ul>
       </section>
 
       <section class="footer-copyright">
-        <img alt="" class="footer-logo" src="http://placehold.it/150x100" height="50" width="150">
+        <img alt="" class="footer-logo" src="/img/htmlacademe-logo.png">
         <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> 2016</p>
       </section>
     </div>
