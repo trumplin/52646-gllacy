@@ -7,9 +7,9 @@
 </head>
 <body>
   <header class="main-header">
-    <div class="container">
+    <div class="container clearfix">
       <div class="logo">
-        <img alt="" src="img/Logo.png" height="63" width="153">
+        <a href="/"><img alt="" src="/img/Logo.png" height="63" width="153"></a>
       </div>
 
       <nav class="main-navigation">
@@ -31,7 +31,7 @@
       <div class="user-block">
         <div class="search">
           <a class="btn-search" href="">Поиск</a>
-       </div>
+        </div>
 
         <div class="search-popup">
           <form action="#" name="search-popup">
@@ -60,8 +60,38 @@
         </div>
 
         <div class="basket">
-          <img alt="" src="http://placehold.it/150x100" height="50" width="50">
-          <a class="btn-basket" href="">Пусто</a>
+          <a href=""><img alt="" src="http://placehold.it/150x100" height="25" width="25"></a>
+          <a class="btn-basket" href="">2 товара</a>
+        </div>
+
+        <div class="basket-popup">
+          <div class="basket-item">
+            <div class="basket-item-remove">
+              <a href=""><img alt="" src="http://placehold.it/150x100" height="10" width="10"></a>
+            </div>
+            <img alt="" class="basket-item-photo" src="img/1.png" height="32" width="32">
+            <div class="basket-item-name"><span>Пломбир с апельсиновым джемом</span></div>
+            <div class="basket-item-price"><span>1,5 кг * 200 руб.</span></div>
+            <div class="basket-item-full-price"><span>300 руб.</span></div>
+          </div>
+
+          <div class="basket-item">
+            <div class="basket-item-remove">
+              <a href=""><img alt="" src="http://placehold.it/150x100" height="10" width="10"></a>
+            </div>
+            <img alt="" class="basket-item-photo" src="img/3.png" height="32" width="32">
+            <div class="basket-item-name"><span>Пломбир с апельсиновым джемом</span></div>
+            <div class="basket-item-price"><span>1,5 кг * 200 руб.</span></div>
+            <div class="basket-item-full-price"><span>300 руб.</span></div>
+          </div>
+
+          <div class="basket-total-price">
+            <span>Итого: 750 руб.</span>
+          </div>
+
+          <div class="basket-btn">
+            <a href="">Оформить заказ</a>
+          </div>
         </div>
       </div>
 
@@ -74,30 +104,31 @@
           <p>8 812 450-25-25</p>
         </div>
       </div>
+
+
     </div>
   </header>
 
   <main class="content">
     <div class="container">
-      <div class="slider">
+      <div class="slider clearfix">
         <div class="slider-image">
-          <img alt="" src="/img/slider1.png" width="900" height="881">
+          <img alt="" src="/img/slider1.png" width="880" height="881">
         </div>
 
+         <div class="slider-pagination clearfix">
+          <ul>
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+          </ul>
+        </div>
         <div class="slider-caption">
           <b>Крем-брюле и пломбир с малиновым джемом</b>
         </div>
 
         <div class="slider-btn">
           <a href="">Давайте оба!</a>
-        </div>
-
-        <div class="slider-pagination">
-          <ul>
-            <li><a href="">1</a></li>
-            <li><a href="">2</a></li>
-            <li><a href="">3</a></li>
-          </ul>
         </div>
       </div>
 
@@ -144,19 +175,19 @@
       <section class="features">
         <h1 class="features-header">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженного собственного производства на развес</h1>
         <div class="features-item">
-          <img alt="" class="features-image" src="http://placehold.it/150x100" height="50" width="50">
+          <img alt="" class="features-image" src="img/Мороженко.png" height="50" width="50">
           <p class="features-desc">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
         </div>
         <div class="features-item">
-          <img alt="" class="features-image" src="http://placehold.it/150x100" height="50" width="50">
+          <img alt="" class="features-image" src="img/Корова.png" height="50" width="50">
           <p class="features-desc">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
         </div>
         <div class="features-item">
-          <img alt="" class="features-image" src="http://placehold.it/150x100" height="50" width="50">
+          <img alt="" class="features-image" src="img/Листик.png" height="50" width="50">
           <p class="features-desc">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
         </div>
         <div class="features-item">
-          <img alt="" class="features-image" src="http://placehold.it/150x100" height="50" width="50">
+          <img alt="" class="features-image" src="img/Градусник.png" height="50" width="50">
           <p class="features-desc">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
         </div>
       </section>
@@ -212,7 +243,7 @@
   </main>
 
   <footer class="main-footer">
-    <div class="container">
+    <div class="container clearfix">
       <section class="footer-social">
         <a class="social-btn social-btn-tw" href="#">Твиттер</a>
         <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
@@ -221,18 +252,20 @@
       </section>
 
       <section class="footer-menu">
-        <ul>
+        <ul class="menu-left">
           <li>Для поставщиков</li>
           <li>О производстве</li>
+        </ul>
+
+        <ul class="menu-right">
           <li>Наши документы</li>
           <li>Экологические стандарты</li>
         </ul>
       </section>
 
-      <section class="footer-copyright">
-        <img alt="" class="footer-logo" src="http://placehold.it/150x100" height="50" width="150">
-        <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> 2016</p>
-      </section>
+      <div class="footer-copyright">
+        <img alt="" class="footer-logo" src="/img/htmlacademe-logo.png"><p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> 2016</p>
+      </div>
     </div>
   </footer>
 </body>
