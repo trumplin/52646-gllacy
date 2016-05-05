@@ -4,13 +4,18 @@
 <meta charset="utf-8">
 <link href="css/normalize.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
 <title>Страница каталога - Глейси</title>
 </head>
 <body>
-  <header class="main-header">
-    <div class="container clearfix">
+  <input type="radio" id="btn-1" name="toggle" checked>
+  <input type="radio" id="btn-2" name="toggle">
+  <input type="radio" id="btn-3" name="toggle">
+
+  <div class="site-wrapper">
+    <header class="main-header container clearfix">
       <div class="logo">
-        <a href="/"><img alt="" src="/img/Logo.png" height="63" width="153"></a>
+        <a href="index.html"><img alt="" src="/img/Logo.png" height="63" width="153"></a>
       </div>
 
       <nav class="main-navigation">
@@ -61,8 +66,7 @@
         </div>
 
         <div class="basket">
-          <a href=""><img alt="" src="http://placehold.it/150x100" height="25" width="25"></a>
-          <a class="btn-basket" href="">2 товара</a>
+          <a class="btn-basket" href="">Пусто</a>
         </div>
 
         <div class="basket-popup">
@@ -105,44 +109,40 @@
           <p>8 812 460-25-25</p>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="content">
-    <div class="container">
-      <div class="slider clearfix">
-        <div class="slider-image">
-          <img alt="" src="/img/slider1.png" width="860" height="881">
+    <main class="content container">
+      <div class="slider">
+        <div class="slide" id="slide1">
+          <div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
+          <a class="slide-btn" href="#">Давайте оба!</a>
         </div>
-
-         <div class="slider-pagination">
-          <ul>
-            <li><a href="">1</a></li>
-            <li><a href="">2</a></li>
-            <li><a href="">3</a></li>
-          </ul>
+        <div class="slide" id="slide2">
+          <div class="slide-title">Шоколадный пломбир и лимонный сорбет</div>
+          <a class="slide-btn" href="#">Давайте оба!</a>
         </div>
-
-        <div class="slider-caption">
-          <b>Крем-брюле и пломбир с малиновым джемом</b>
+        <div class="slide" id="slide3">
+          <div class="slide-title">Пломбир с помадкой и клубничный щербет</div>
+          <a class="slide-btn" href="#">Давайте оба!</a>
         </div>
-
-        <div class="slider-btn">
-          <a href="">Давайте оба!</a>
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
         </div>
       </div>
 
-      <section class="promo">
+      <section class="promo clearfix">
         <div class="promo-item-left">
           <h2>Малинка даром!</h2>
-          <p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a class="promo-button" href="">Хочу варенье!</a>
+          <p class="clearfix">При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <a class="promo-btn" href="">Хочу варенье!</a>
         </div>
 
         <div class="promo-item-right">
           <h2>Шоколадки даром!</h2>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <a class="promo-button" href="">Хочу шоколадки!</a>
+          <a class="promo-btn" href="">Хочу шоколадки!</a>
         </div>
       </section>
 
@@ -246,11 +246,9 @@
           </form>
         </div>
       </section>
-    </div>
-  </main>
+    </main>
 
-  <footer class="main-footer">
-    <div class="container clearfix">
+    <footer class="main-footer container clearfix">
       <section class="footer-social">
         <a class="social-btn social-btn-tw" href="#">Твиттер</a>
         <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
@@ -273,7 +271,8 @@
       <div class="footer-copyright">
         <img alt="" class="footer-logo" src="/img/htmlacademe-logo.png"><p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> 2016</p>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
+
 </body>
 </html>
