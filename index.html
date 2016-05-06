@@ -5,7 +5,7 @@
 <link href="css/normalize.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
-<title>Страница каталога - Глейси</title>
+<title>Главная страница - Глейси</title>
 </head>
 <body>
   <input type="radio" id="btn-1" name="toggle" checked>
@@ -111,7 +111,7 @@
       </div>
     </header>
 
-    <main class="content container">
+    <main class="content container clearfix">
       <div class="slider">
         <div class="slide" id="slide1">
           <div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
@@ -148,27 +148,27 @@
 
       <section class="products">
         <div class="product-item">
-          <div class="product-hit"><b>Хит</b></div>
+          <div class="product-hit"></div>
           <img alt="" class="product-image" src="/img/1.png" height="267" width="267">
-          <div class="product-price">310 Рублей/кг</div>
+          <div class="product-price">310 &#8381;/кг</div>
           <a class="product-name" href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </div>
         <div class="product-item">
-          <div class="product-hit"><b>Хит</b></div>
+          <div class="product-hit"></div>
           <img alt="" class="product-image" src="/img/2.png" height="267" width="267">
-          <div class="product-price">380 Рублей/кг</div>
+          <div class="product-price">380 &#8381;/кг</div>
           <a class="product-name" href="">Сливочно-кофейное с кусочками шоколада</a>
         </div>
         <div class="product-item">
-          <div class="product-hit"><b>Хит</b></div>
+          <div class="product-hit"></div>
           <img alt="" class="product-image" src="/img/3.png" height="267" width="267">
-          <div class="product-price">355 Рублей/кг</div>
+          <div class="product-price">355 &#8381;/кг</div>
           <a class="product-name" href="">Сливочно-клубничное с присыпкой из белого шоколада</a>
         </div>
         <div class="product-item">
-          <div class="product-hit"><b>Хит</b></div>
+          <div class="product-hit"></div>
           <img alt="" class="product-image" src="/img/4.png" height="267" width="267">
-          <div class="product-price">415 Рублей/кг</div>
+          <div class="product-price">415 &#8381;/кг</div>
           <a class="product-name" href="">Сливочное крем-брюле с карамельной подливкой</a>
         </div>
       </section>
@@ -204,11 +204,14 @@
         </section>
 
         <section class="subscribe">
-          <p class="subscribe-desc">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно=)</p>
-          <form name="subscribe">
-            <input type="email" name="email" placeholder="Электронная почта">
-            <input type="submit" value="Отправить">
-          </form>
+          <div class="subscribe-bacground">
+            <p class="subscribe-desc">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно=)</p>
+            <form name="subscribe">
+              <input type="email" name="email" placeholder="Электронная почта">
+              <input type="submit" value="Отправить">
+            </form>
+          </div>
+
         </section>
       </div>
 
@@ -249,7 +252,9 @@
     </main>
 
     <footer class="main-footer container clearfix">
+      <div class="devide"></div>
       <section class="footer-social">
+
         <a class="social-btn social-btn-tw" href="#">Твиттер</a>
         <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
         <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
@@ -258,19 +263,22 @@
 
       <section class="footer-menu">
         <ul class="menu-left">
-          <li>Для поставщиков</li>
-          <li>О производстве</li>
+          <div class="love"></div>
+          <li><a href="/">Для поставщиков</a></li>
+          <li><a href="/">О производстве</a></li>
         </ul>
 
+
         <ul class="menu-right">
-          <li>Наши документы</li>
-          <li>Экологические стандарты</li>
+          <li><a href="/">Наши документы</a></li>
+          <li><a href="/">Экологические стандарты</a></li>
         </ul>
       </section>
 
-      <div class="footer-copyright">
-        <img alt="" class="footer-logo" src="/img/htmlacademe-logo.png"><p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> 2016</p>
-      </div>
+      <section class="footer-copyright">
+        <img alt="" class="footer-logo" src="/img/htmlacademe-logo.png">
+        <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> 2016</p>
+      </section>
     </footer>
   </div>
 
