@@ -271,7 +271,10 @@
 <script>
   var linkSearch = document.querySelector(".btn-search");
   var popupSearch = document.querySelector(".search-popup");
-  var searchEdit = popup-search.querySelector("[name=search-edit]");
+  var searchEdit = popupSearch.querySelector("[name=search-edit]");
+  var linkLogin = document.querySelector(".btn-login");
+  var popupLogin = document.querySelector(".login-popup");
+
 
   linkSearch.addEventListener("mouseover", function(event) {
     event.preventDefault();
@@ -279,13 +282,22 @@
     searchEdit.focus();
   });
 
+  linkLogin.addEventListener("mouseover", function(event) {
+    event.preventDefault();
+    popupLogin.classList.add("login-popup-show");
+  });
+
   window.addEventListener("keydown", function(event) {
   if (event.keyCode === 27) {
     if (popupSearch.classList.contains("search-popup-show")) {
       popupSearch.classList.remove("search-popup-show");
     }
+    if (popupLogin.classList.contains("login-popup-show")) {
+      popupLogin.classList.remove("login-popup-show");
+    }
   }
 });
 </script>
+
 </body>
 </html>
