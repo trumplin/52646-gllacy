@@ -33,31 +33,23 @@
       <div class="user-block">
         <div class="search">
           <a class="btn-search" href="">Поиск</a>
-        </div>
-
-        <div class="search-popup">
+          <div class="search-popup">
           <form action="#" name="search-popup">
-            <input type="text" placeholder="Что ищем?">
-            <input type="submit"></form>
+            <input type="text" name="search-edit" placeholder="Что ищем?">
+          </form>
+        </div>
         </div>
 
         <div class="login">
           <a class="btn-login" href="">Вход</a>
-        </div>
-
-        <div class="login-popup">
-          <form action="#" name="login-popup">
-            <input type="text" placeholder="Электронная почта">
-            <input type="password" placeholder="Пароль">
-            <input type="submit">
-          </form>
-
-          <div class="forgot-password">
-            <a href="">Забыли пароль?</a>
-          </div>
-
-          <div class="new-registration">
-            <a href="">Новая регистрация</a>
+          <div class="login-popup">
+            <form action="#" name="login-popup">
+              <input type="text" placeholder="Электронная почта">
+              <input type="password" placeholder="Пароль">
+              <input type="submit" value="Войти">
+              <a class="forgot-password" href="">Забыли пароль?</a>
+              <a class="new-registration" href="">Новая регистрация</a>
+            </form>
           </div>
         </div>
 
@@ -193,7 +185,7 @@
           </div>
         </form>
       </div>
-      <section class="products">
+      <div class="products">
         <div class="product-item">
           <img alt="" class="product-image" src="/img/1.png" height="267" width="267">
           <div class="product-price">310 &#8381;/кг</div>
@@ -254,7 +246,7 @@
           <div class="product-price">415 &#8381;/кг</div>
           <a class="product-name" href="">Сливочное крем-брюле с карамельной подливкой</a>
         </div>
-      </section>
+      </div>
       <div class="paginator">
         <a class="prev" href="#prev"></a>
         <a href="#1">1</a>
@@ -265,34 +257,33 @@
         <a class="next" href="#next"></a>
       </div>
     </main>
-
-  <footer class="main-footer container clearfix">
+    <footer class="main-footer container clearfix">
       <div class="devide"></div>
-      <section class="footer-social">
+      <div class="footer-social">
         <a class="social-btn social-btn-tw" href="#">Твиттер</a>
         <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
         <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
         <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-      </section>
+      </div>
 
-      <section class="footer-menu">
+      <div class="footer-menu">
+        <div class="love"></div>
         <ul class="menu-left">
-          <div class="love"></div>
           <li><a href="/">Для поставщиков</a></li>
           <li><a href="/">О производстве</a></li>
         </ul>
+
         <ul class="menu-right">
           <li><a href="/">Наши документы</a></li>
           <li><a href="/">Экологические стандарты</a></li>
         </ul>
-      </section>
+      </div>
 
-      <section class="footer-copyright">
+      <div class="footer-copyright">
         <img alt="" class="footer-logo" src="/img/htmlacademe-logo.png">
         <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> 2016</p>
-      </section>
+      </div>
     </footer>
-
   </div>
 </body>
 </html>
