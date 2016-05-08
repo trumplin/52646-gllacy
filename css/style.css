@@ -486,7 +486,6 @@ a {
 
 .products{
   font-size: 0px;
-
 }
 
 .product-item {
@@ -588,11 +587,25 @@ a {
   width: 380px;
   height: 180px;
   font-size: 16px;
-  background: rgba(2,2,2,0.4);
+  background: url("/img/strawberry.png") no-repeat 100% 100%;
   display: inline-block;
-  vertical-align: top;
+  border-radius: 10px;
   margin-right: 20px;
   padding: 20px;
+}
+
+.blog h2 {
+
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.blog-post {
+  font-size: 24px;
+  color: black;
 }
 
 .subscribe {
@@ -608,21 +621,27 @@ a {
   background: #f8f7f4;
   border-radius: 10px;
   min-height: 180px;
+  padding: 25px 20px;
+}
+
+.subscribe-desc {
   font-size: 16px;
-  padding: 10px;
+  line-height: 22px;
+  color: rgb(131, 131, 131);
+  font-weight: 100;
+  margin-bottom: 20px;
+
 }
 
-.subscribe-bacground p {
-  margin: 0px;
-  padding: 0px;
+.subscribe form {
+  font-size: 16px;
 }
-
 
 .map{
   position: relative;
   margin-bottom: 40px;
-
 }
+
 .map-description {
   width: 260px;
   height: 265px;
