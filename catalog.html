@@ -34,9 +34,9 @@
         <div class="search">
           <a class="btn-search" href="">Поиск</a>
           <div class="search-popup">
-          <form action="#" name="search-popup">
-            <input type="text" name="search-edit" placeholder="Что ищем?">
-          </form>
+            <form action="/" name="search-popup">
+              <input type="text" class="edit edit-search" name="search-edit" placeholder="Что ищем?">
+            </form>
         </div>
         </div>
 
@@ -44,9 +44,9 @@
           <a class="btn-login" href="">Вход</a>
           <div class="login-popup">
             <form action="#" name="login-popup">
-              <input type="text" placeholder="Электронная почта">
-              <input type="password" placeholder="Пароль">
-              <input type="submit" value="Войти">
+              <input type="text" class="edit edit-login-email" placeholder="Электронная почта">
+              <input type="password" class="edit edit-login-password" placeholder="Пароль">
+              <input type="submit" class="button button-login" value="Войти">
               <a class="forgot-password" href="">Забыли пароль?</a>
               <a class="new-registration" href="">Новая регистрация</a>
             </form>
@@ -98,7 +98,7 @@
         </div>
       </div>
     </header>
-    <main class="content container clearfix">
+    <div class="content container clearfix">
       <div class="breadcrumbs">
         <ul>
           <li><a href="">Главная</a> » </li>
@@ -256,7 +256,7 @@
         <a href="#5">5</a>
         <a class="next" href="#next"></a>
       </div>
-    </main>
+    </div>
     <footer class="main-footer container clearfix">
       <div class="devide"></div>
       <div class="footer-social">
@@ -285,5 +285,36 @@
       </div>
     </footer>
   </div>
+
+<script>
+  var linkSearch = document.querySelector(".btn-search");
+  var popupSearch = document.querySelector(".search-popup");
+  var searchEdit = popupSearch.querySelector("[name=search-edit]");
+  var linkLogin = document.querySelector(".btn-login");
+  var popupLogin = document.querySelector(".login-popup");
+
+  linkSearch.addEventListener("mouseover", function(event) {
+    event.preventDefault();
+    popupSearch.classList.add("search-popup-show");
+    searchEdit.focus();
+  });
+
+  linkLogin.addEventListener("mouseover", function(event) {
+    event.preventDefault();
+    popupLogin.classList.add("login-popup-show");
+  });
+
+  window.addEventListener("keydown", function(event) {
+  if (event.keyCode === 27) {
+    if (popupSearch.classList.contains("search-popup-show")) {
+      popupSearch.classList.remove("search-popup-show");
+    }
+    if (popupLogin.classList.contains("login-popup-show")) {
+      popupLogin.classList.remove("login-popup-show");
+    }
+  }
+});
+</script>
+
 </body>
 </html>
