@@ -13,25 +13,27 @@
 <input type="radio" id="btn-3" name="toggle">
 <div class="site-wrapper">
   <div class="overlay">
- <div class="feedback-popup">
-    <h2>Мы обязательно вам ответим!</h2>
-    <form action="#" name="feedback">
-      <div class="feedback-name">
-        <input type="text" class="edit edit-feedback-name" placeholder="Как вас зовут">
-      </div>
+    <div class="feedback-popup">
+      <div class="close"></div>
+      <h2>Мы обязательно вам ответим!</h2>
 
-      <div class="feedback-email">
-        <input type="text" class="edit edit-feedback-email" placeholder="Ваша почта для ответа">
-      </div>
+      <form action="#" name="feedback">
+        <div class="feedback-name">
+          <input type="text" class="edit edit-feedback-name" placeholder="Как вас зовут">
+        </div>
 
-      <div class="feedback-message">
-        <textarea class="edit edit-feedback-message" placeholder="Напишите что-нибудь!"></textarea>
-      </div>
+        <div class="feedback-email">
+          <input type="text" class="edit edit-feedback-email" placeholder="Ваша почта для ответа">
+        </div>
 
-      <div class="feedback-submit">
-        <input type="submit" class="button button-feedback" value="Отправить">
-      </div>
-    </form>
+        <div class="feedback-message">
+          <textarea class="edit edit-feedback-message" placeholder="Напишите что-нибудь!"></textarea>
+        </div>
+
+        <div class="feedback-submit">
+          <input type="submit" class="button button-feedback" value="Отправить">
+        </div>
+      </form>
   </div>
 </div>
   <header class="main-header container clearfix">
@@ -41,9 +43,9 @@
 
     <nav class="main-navigation">
       <ul class="main-menu">
-        <li><a href="catalog.html">Каталог</a>
-          <ul class="catalog-popup">
-            <li><a href="">Новинки</a></li>
+        <li class="catalog-sub-menu"><a href="catalog.html">Каталог</a>
+          <ul class="sub-menu">
+            <li>Новинки</li>
             <li><a href="">Сливочное</a></li>
             <li><a href="">Щербеты</a></li>
             <li><a href="">Фруктовый лед</a></li>
@@ -162,31 +164,31 @@
       <div class="product-item">
         <div class="product-hit"></div>
         <img alt="" class="product-image" src="/img/1.png" height="267" width="267">
-        <div class="product-price">310 &#8381;/кг</div>
+        <div class="product-price">310&#8381;<span>/кг</span></div>
         <a class="product-name" href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
       </div>
       <div class="product-item">
         <div class="product-hit"></div>
         <img alt="" class="product-image" src="/img/2.png" height="267" width="267">
-        <div class="product-price">380 &#8381;/кг</div>
+        <div class="product-price">380&#8381;<span>/кг</span></div>
         <a class="product-name" href="">Сливочно-кофейное с кусочками шоколада</a>
       </div>
       <div class="product-item">
         <div class="product-hit"></div>
         <img alt="" class="product-image" src="/img/3.png" height="267" width="267">
-        <div class="product-price">355 &#8381;/кг</div>
+        <div class="product-price">355&#8381;<span>/кг</span></div>
         <a class="product-name" href="">Сливочно-клубничное с присыпкой из белого шоколада</a>
       </div>
       <div class="product-item">
         <div class="product-hit"></div>
         <img alt="" class="product-image" src="/img/4.png" height="267" width="267">
-        <div class="product-price">415 &#8381;/кг</div>
+        <div class="product-price">415&#8381;<span>/кг</span></div>
         <a class="product-name" href="">Сливочное крем-брюле с карамельной подливкой</a>
       </div>
     </div>
 
     <div class="features">
-      <h1 class="features-header">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженного собственного производства на развес</h1>
+      <h1 class="features-header">Магазин Глейси &#8212; это онлайн и офлайн магазин по продаже мороженного собственного производства на развес</h1>
       <div class="features-item">
         <img alt="" class="features-image" src="img/Мороженко.png" height="50" width="50">
         <p class="features-desc">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
@@ -194,12 +196,13 @@
 
       <div class="features-item">
         <img alt="" class="features-image" src="img/Корова.png" height="50" width="50">
-        <p class="features-desc">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+        <p class="features-desc">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
       </div>
 
       <div class="features-item">
         <img alt="" class="features-image" src="img/Листик.png" height="50" width="50">
-        <p class="features-desc">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+        <p class="features-desc">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+</p>
       </div>
 
       <div class="features-item">
@@ -227,9 +230,9 @@
   </div>
 </div>
 <div class="map">
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=H_XlpW7jvtloCkQ91kEz931f6McJRHOv&width=100%&height=430&lang=ru_RU&scroll=false"></script>
-    <div class="map-description">
-      <p>Адрес главного офиса и офлайн магазина:</p>
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=H_XlpW7jvtloCkQ91kEz931f6McJRHOv&width=100%&height=430&lang=ru_RU&scroll=false"></script>
+  <div class="map-description">
+      <p>Адрес главного офиса и <br>офлайн магазина:</p>
       <p class="map-adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
       <p>Для заказов по телефону:</p>
       <p class="map-phone">8 812 450-25-25</p>
@@ -237,7 +240,7 @@
       <a class="button" href="">Форма обратной связи</a>
     </div>
   </div>
-<div class="site-wrapper">
+
     <footer class="main-footer container clearfix">
       <div class="devide"></div>
       <div class="footer-social">
@@ -246,7 +249,6 @@
         <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
         <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
       </div>
-
       <div class="footer-menu">
         <div class="love"></div>
         <ul class="menu-left">
@@ -259,19 +261,24 @@
           <li><a href="/">Экологические стандарты</a></li>
         </ul>
       </div>
-
       <div class="footer-copyright">
         <img alt="" class="footer-logo" src="/img/htmlacademe-logo.png">
-        <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> 2016</p>
+        <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> 	&#169; 2016</p>
       </div>
     </footer>
-  </div>
-<script>
+
+ <script>
   var linkSearch = document.querySelector(".btn-search");
   var popupSearch = document.querySelector(".search-popup");
   var searchEdit = popupSearch.querySelector("[name=search-edit]");
   var linkLogin = document.querySelector(".btn-login");
   var popupLogin = document.querySelector(".login-popup");
+  var linkFeedback = document.querySelector(".map-description > a");
+  var popupFeedback = document.querySelector(".feedback-popup");
+  var popupOverlay = document.querySelector(".overlay");
+  var linkClose = document.querySelector(".close");
+  var linkCatalog = document.querySelector(".catalog-sub-menu");
+  var popupSubmenu = document.querySelector(".sub-menu");
 
 
   linkSearch.addEventListener("mouseover", function(event) {
@@ -285,6 +292,32 @@
     popupLogin.classList.add("login-popup-show");
   });
 
+  linkFeedback.addEventListener("click", function(event) {
+    event.preventDefault();
+    popupOverlay.classList.add("overlay-show");
+    popupFeedback.classList.add("feedback-popup-show");
+  });
+
+  linkClose.addEventListener("click", function(event){
+    event.preventDefault();
+    if (popupOverlay.classList.contains("overlay-show")) {
+      popupOverlay.classList.remove("overlay-show");
+    }
+  });
+
+  linkCatalog.addEventListener("mouseover", function(event){
+    event.preventDefault();
+    popupSubmenu.classList.add("sub-menu-show");
+    console.log("что то");
+  });
+
+  popupSubmenu.addEventListener("mouseout", function(event){
+    event.preventDefault();
+    if (popupSubmenu.classList.contains("sub-menu-show")) {
+      popupSubmenu.classList.remove("sub-menu-show");
+    }
+  });
+
   window.addEventListener("keydown", function(event) {
   if (event.keyCode === 27) {
     if (popupSearch.classList.contains("search-popup-show")) {
@@ -292,6 +325,12 @@
     }
     if (popupLogin.classList.contains("login-popup-show")) {
       popupLogin.classList.remove("login-popup-show");
+    }
+    if (popupFeedback.classList.contains("feedback-popup-show")) {
+      popupFeedback.classList.remove("feedback-popup-show");
+    }
+    if (popupOverlay.classList.contains("overlay-show")) {
+      popupOverlay.classList.remove("overlay-show");
     }
   }
 });

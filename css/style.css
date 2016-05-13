@@ -108,7 +108,8 @@ a{
   float: left;
   width: 154px;
   margin-top: 10px;
-  }
+  margin-left: -5px;
+}
 
 .logo a{
   display: block;
@@ -117,26 +118,82 @@ a{
 .main-navigation{
   float: left;
   padding: 0px;
-  margin-left: 30px;
-  margin-top: 28px;
+  margin-left: 15px;
+  margin-top: 20px;
 }
 
 .main-menu{
-  padding: 0px;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.main-menu li{
-  padding: 0px;
-  margin: 0px;
+.main-menu > li{
   font-size: 16px;
   font-weight: bold;
-  display: inline;
-  margin-right: 27px;
+  display: inline-block;
+  margin-right: 8px;
+  position: relative;
 }
 
-.main-menu li:nth-child(3n){
+.main-menu > li:nth-child(3n){
   margin-right: 0px;
+  margin-left: 15px
+}
+
+.catalog-sub-menu{
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+.catalog-sub-menu:hover{
+  background: #f8f7f4;
+}
+
+.catalog-sub-menu:hover > a{
+  color: black;
+  text-decoration: none;
+}
+
+.sub-menu{
+  position: absolute;
+  display: none;
+  left: 0px;
+  top: 45px;
+  width: 150px;
+  margin-top: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  border-radius: 5px;
+  background: #f8f7f4;
+  box-shadow: 0 20px 20px 0px rgba(0,0,0, 0.4);
+  z-index: 10;
+}
+
+.sub-menu-show{
+  display: block;
+}
+
+
+.sub-menu li:nth-child(1){
+  padding: 10px 5px;
+  margin: 0px 10px;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(2,2,2,0.2);
+}
+
+.sub-menu a{
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+}
+
+.sub-menu a:hover{
+  background: #fbded8;
 }
 
 .user-block{
@@ -219,7 +276,7 @@ a{
   padding-right: 16px;
   padding-top: 10px;
   padding-bottom: 12px;
-  background: rgba(255, 255, 255, 0.2) url("/img/login.png") no-repeat 16px 50%;
+  background: rgba(255, 255, 255, 0.2) url("/img/login.png") no-repeat 14px 50%;
   border-radius: 100px;
   vertical-align: top;
     height: 11px;
@@ -304,10 +361,6 @@ a{
   text-decoration: none;
 }
 
-.catalog-popup{
-  display: none;
-}
-
 .basket-popup{
   display: none;
 }
@@ -322,17 +375,18 @@ a{
 .header-contacts p{
   margin: 0px;
   padding: 0px;
-
 }
 
 .shedule{
   font-size: 14px;
   font-weight: bold;
   color: white;
-  margin-bottom: 9px;
+  margin-bottom: 3px;
 }
 
 .phone{
+  margin: 0px;
+  padding: 0px;
   font-size: 22px;
   font-weight: bolder;
   color: white;
@@ -346,7 +400,7 @@ a{
 /* слайдер */
 .slider{
   position: relative;
-  padding-top: 320px;
+  padding-top: 290px;
   text-align: center;
   color: #ffffff;
   margin-bottom: 40px;
@@ -359,16 +413,17 @@ a{
 .slide-title{
   width: 700px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   font-weight: 800;
   font-size: 60px;
+  line-height: 64px;
 }
 
 .slide-btn{
   display: inline-block;
-  padding: 12px 50px;
+  padding: 12px 40px;
   font-weight: 600;
-  font-size: 31px;
+  font-size: 32px;
   line-height: 41px;
   vertical-align: top;
   color: #ffffff;
@@ -449,16 +504,16 @@ a{
 
 .promo{
   font-size: 0px;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 
 .promo h2{
   margin: 0px;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   padding: 0px;
   color: #fff;
   font-size: 35px;
-  line-height: 41px;
+  line-height: 35px;
 }
 
 .promo p{
@@ -472,23 +527,26 @@ a{
 
 .promo-item-left{
   padding: 20px;
+  padding-bottom: 5px;
   float: left;
   width: 380px;
   background: rgba(145, 44, 44, 0.85) url("/img/malina.png");
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .promo-item-right{
   padding: 20px;
+  padding-bottom: 5px;
   float: left;
   width: 380px;
   margin-left: 20px;
   background: rgba(37, 45, 51, 0.88) url("/img/chocolate.png");
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .button-promo{
   float: right;
+  padding: 12px 23px;
 }
 
 .breadcrumbs ul{
@@ -544,22 +602,30 @@ a{
 
 .features{
   font-size: 0px;
-  background: rgb(253, 240, 240) url("/img/Layer 1.png") ;
-  border-radius: 10px;
-  padding: 30px 20px;
+  background: rgb(253, 240, 240) url("/img/ice-pattern.jpg") ;
+  border-radius: 15px;
+  padding: 25px 20px;
+  padding-bottom: 15px;
   margin-bottom: 40px;
+  margin-top: 2px;
 }
 
 .features-header{
   font-size: 24px;
   line-height: 30px;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 8px;
+
 }
 
 .features-item{
   width: 400px;
   display: inline-block;
+  margin: 0px;
+  padding: 0px;
   margin-right: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   vertical-align: top;
 }
 
@@ -575,11 +641,11 @@ a{
 .features-desc{
   margin: 0px;
   padding: 0px;
-  padding-top: 15px;
+  padding-top: 12px;
   font-size: 16px;
   line-height: 22px;
-  margin-left: 60px;
-  width: 340px;
+  margin-left: 55px;
+  width: 343px;
 }
 
 .products{
@@ -620,15 +686,20 @@ a{
   color: #fff;
   text-shadow: 1px 1px 3px #000;
   position: absolute;
-  top: 145px;
+  top: 135px;
   left: 0px;
 }
 
+
+.product-price span{
+  font-size: 30px;
+  font-weight: bold;
+}
 .product-name{
   display: block;
   text-align: center;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 20px;
   font-weight: normal;
 }
 
@@ -699,12 +770,15 @@ a{
   line-height: 22px;
   font-weight: 500;
   color: dimgrey;
+  margin-top: 2px;
 }
 
 .blog-post{
-  font-size: 24px;
+  display: block;
+  font-size: 28px;
   font-weight: bold;
   line-height: 30px;
+  margin-top: 5px;
   color: black;
   outline: rgba(255, 255, 255, 0.8) solid 5px;
   background: rgba(255, 255, 255, 0.8);
@@ -722,29 +796,38 @@ a{
 .subscribe-bacground{
   background: #f8f7f4;
   border-radius: 10px;
-  min-height: 166px;
-  padding: 10px 20px;
 }
 
 .subscribe-desc{
-  font-size: 16px;
+  font-size: 17px;
   line-height: 22px;
   color: rgb(131, 131, 131);
   font-weight: 100;
-  margin-bottom: 20px;
+  padding: 0px;
+  margin: 0px;
+  padding: 26px 20px;
+  padding-bottom: 0px;
 }
 
 .subscribe form{
   font-size: 16px;
+  padding: 15px 15px;
+  padding-bottom: 30px;
 }
 
 .button-subscribe{
   border: none;
+  padding: 10px 17px;
+  margin: 0px;
+  margin-left: 11px;
+
 }
 
 .edit-subscribe{
   padding: 15px 0px;
   padding-left: 15px;
+  width: 215px;
+  height: 15px;
 }
 
 .map{
@@ -752,11 +835,13 @@ a{
 }
 
 .map-description{
-  width: 250px;
+  width: 254px;
   padding: 30px 25px;
+  padding-left: 25px;
   position: absolute;
-  top: 50px;
-  right: 18%;
+  top: 60px;
+  left: 50%;
+  margin-left: 127px;
   background-color: #fdfefe;
   border-radius: 15px;
 }
@@ -775,20 +860,27 @@ a{
   font-weight: bold;
 }
 
+.map-description .map-phone{
+  margin-top: 4px;
+}
+
 .map-description .map-adress{
-  margin-bottom: 25px;
+  margin-top: 2px;
+  margin-bottom: 19px;
 }
 
 .map-description .button{
-  margin: 0 auto;
+  margin: 0px;
   margin-top: 25px;
-
+  padding: 10px 25px;
+  padding-left: 33px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
-.overlay:before{
-  content: '';
+.overlay{
+  content: "";
   position: fixed;
-  display: block;
   display: none;
   top: 0;
   left: 0;
@@ -796,6 +888,11 @@ a{
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 30;
+}
+
+.overlay-show{
+  display: block;
+  animation: bounce 0.6s;
 }
 
 .feedback-popup{
@@ -809,10 +906,24 @@ a{
   box-shadow: 0 20px 20px 0px rgba(0,0,0, 0.4);
   z-index:1;
   margin: 0 auto;
-  top: 335px;
+  top: 15%;
   left: 50%;
   margin-left: -225px;
   z-index: 40;
+}
+
+.close{
+  width: 17px;
+  height: 17px;
+  background: url("/img/close.png") no-repeat 50% 50%;
+  float: right;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.feedback-popup-show{
+  display: block;
+  animation: bounce 0.6s;
 }
 
 .feedback-popup h2{
@@ -855,7 +966,7 @@ a{
 
 .main-footer{
   position: relative;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .devide{
@@ -866,10 +977,11 @@ a{
 .footer-social{
   float: left;
   font-size: 0px;
+  margin-top: -6px;
 }
 
 .social-btn{
-  margin-right: 12px;
+  margin-right: 10px;
   display: inline-block;
   border-radius: 50%;
   box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
@@ -900,6 +1012,8 @@ a{
 
 .footer-menu{
   float: left;
+  margin: 0px;
+  margin-top: -9px;
   margin-left: 94px;
   font-size: 0px;
   position: relative;
@@ -919,10 +1033,14 @@ a{
 
 .menu-left li{
   margin-right: 30px;
+  margin-bottom: 5px;
 }
 
-.menu-left li:nth-child(2n){
-  margin-right: 30px;
+.menu-right li{
+  margin-bottom: 5px;
+}
+
+.menu-left li:nth-child(2n+1){
   font-weight: 900;
 }
 
@@ -939,7 +1057,7 @@ a{
   float: right;
   position: absolute;
   right: 20px;
-  top: 20px;
+  top: 17px;
   font-size: 12px;
   color: white;
 }
@@ -948,6 +1066,7 @@ a{
   margin: 0px;
   padding: 0px;
   margin-top: 5px;
+  font-size: 12px;
 }
 
 /* Clearfix */
