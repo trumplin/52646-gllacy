@@ -147,12 +147,22 @@ a{
   border-radius: 20px;
 }
 
+
 .catalog-sub-menu:hover{
   background: #f8f7f4;
 }
 
 .catalog-sub-menu:hover > a{
   color: black;
+  text-decoration: none;
+  background: #f8f7f4;
+}
+
+.catalog-active{
+  background: #d07058;
+}
+
+.catalog-active a{
   text-decoration: none;
 }
 
@@ -187,7 +197,6 @@ a{
   border-bottom: 1px solid rgba(2,2,2,0.2);
 }
 
-
 .sub-menu a{
   color: black;
   margin-bottom: -6px;
@@ -203,6 +212,10 @@ a{
 
 .sub-menu a:hover{
   background: #fbded8;
+}
+
+.sub-menu a:active{
+  background: #f6b5a5;
 }
 
 .user-block{
@@ -382,9 +395,106 @@ a{
   text-decoration: none;
 }
 
+.btn-basket-active{
+  background: rgba(255, 255, 255, 1) url("/img/basket-hover.png") no-repeat 16px 50%;
+  color: black;
+  font-weight: bold;
+  padding-right: 15px;
+}
+
 .basket-popup{
   display: none;
+  font-size: 14px;
+  line-height: 24px;
+  position: absolute;
+  right: 0px;
+  top: 37px;
+  background: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px 0px rgba(0,0,0, 0.4);
+  z-index: 1;
+  width: 540px;
 }
+
+.basket-popup-show{
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.basket-item{
+  display: inline-block;
+  margin-bottom: -6px;
+  margin-top: 25px;
+}
+
+.basket-item-remove,
+.basket-item-photo,
+.basket-item-name,
+.basket-item-price,
+.basket-item-full-price{
+  display: inline-block;
+  vertical-align:text-top;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.basket-item-remove{
+  background: url("/img/close.png") no-repeat 50% 50%;
+  width: 12px;
+  height: 13px;
+  margin-left: 18px;
+  opacity: 0.5;
+  margin-right: 12px;
+  margin-top: 5px;
+}
+
+.basket-item-photo{
+  margin-right: 10px;
+}
+
+.basket-item-name{
+  width: 220px;
+  margin-right: 23px;
+  margin-top: 5px;
+}
+
+.basket-item-price{
+  margin-right: 23px;
+  margin-top: 5px;
+}
+
+.basket-item-price span{
+  color: #999999;
+}
+.basket-item-full-price{
+  margin-right: 33px;
+  margin-top: 5px;
+}
+
+.basket-total-price{
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 13px;
+  margin-left: 16px;
+  text-align: right;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  border-top: 1px solid #cacac7;
+  padding-top: 13px;
+}
+
+.basket-btn{
+  margin-bottom: 12px;
+  float: right;
+  margin-right: 14px;
+  margin-top: 14px;
+  padding: 10px 14px;
+  padding-bottom: 10px;
+  padding-top: 7px;
+
+}
+
+
 
 .header-contacts{
   position: absolute;
@@ -712,6 +822,7 @@ a{
   height: 23px;
   margin-left: 18px;
   margin-top: -8px;
+  cursor: pointer;
 }
 
 .sort-price-slider:hover:after{
@@ -719,6 +830,7 @@ a{
   height: 23px;
   margin-right: 53px;
   margin-top: -8px;
+  cursor: pointer
 }
 
 
@@ -728,8 +840,6 @@ a{
   padding: 0px;
   padding: 10px 0px;
   padding-right: 10px;
-
-
 }
 
 .sort-fat-radio{
@@ -868,24 +978,39 @@ a{
   vertical-align: top;
 }
 
-.product-item:hover:before{
-  content: "";
-  background: rgba(255,255,255, 0.5);
-  width: 220px;
-  height: 300px;
-  border-radius: 5px;
-  display: inline-block;
+.popup:hover{
+  background: rgba(255,255,255, 0.3);
   position: absolute;
+  width: 200px;
+  border-radius: 5px;
+  padding: 10px;
   top: -10px;
   left: -10px;
-  z-index: -10;
+  z-index: 10;
 }
 
+.button-quick-view{
+  display: none;
+}
+
+.product-item:hover .button-quick-view{
+  display: block;
+  margin: 0px auto;
+  margin-top: 15px;
+  margin-bottom: 17px;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 10px 15px;
+}
+
+.product-item:hover .product-price{
+  left: 10px;
+  top: 145px;
+}
 
 .product-item:nth-child(4n){
   margin-right: 0px;
 }
-
 
 .product-hit{
   background-image: url("/img/hit.png");
@@ -944,6 +1069,7 @@ a{
   height: 25px;
   background: url("/img/prev.png") no-repeat 50% 50%;
   margin-right: 15px;
+  opacity: 0.3;
 }
 
 .paginator .next{
@@ -966,7 +1092,6 @@ a{
 
 .paginator a:nth-child(6){
   margin-right: 15px;
-
 }
 
 .active{
@@ -976,6 +1101,14 @@ a{
   margin-right: 5px;
   border-radius: 50%;
   background: #fff;
+}
+
+.paginator a:hover{
+  color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .blog-and-subscribe{

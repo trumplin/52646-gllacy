@@ -10,25 +10,25 @@
 <body>
   <div class="site-wrapper">
     <header class="main-header container clearfix">
-    <div class="logo">
-      <a href="index.html"><img alt="" src="/img/Logo.png" height="63" width="153"></a>
-    </div>
+      <div class="logo">
+        <a href="index.html"><img alt="" src="/img/Logo.png" height="63" width="153"></a>
+      </div>
 
-    <nav class="main-navigation">
-      <ul class="main-menu">
-        <li class="catalog-sub-menu"><a href="catalog.html">Каталог</a>
-          <ul class="sub-menu">
-            <li>Новинки</li>
-            <li><a href="">Сливочное</a></li>
-            <li><a href="">Щербеты</a></li>
-            <li><a href="">Фруктовый лед</a></li>
-            <li><a href="">Мелорин</a></li>
+      <nav class="main-navigation">
+          <ul class="main-menu">
+            <li class="catalog-sub-menu catalog-active"><a href="">Каталог</a>
+              <ul class="sub-menu">
+                <li>Новинки</li>
+                <li><a href="/catalog.html">Сливочное</a></li>
+                <li><a href="">Щербеты</a></li>
+                <li><a href="">Фруктовый лед</a></li>
+                <li><a href="">Мелорин</a></li>
+              </ul>
+            </li>
+            <li><a href="">Доставка и оплата</a></li>
+            <li><a href="">О компании</a></li>
           </ul>
-        </li>
-        <li><a href="">Доставка и оплата</a></li>
-        <li><a href="">О компании</a></li>
-      </ul>
-    </nav>
+        </nav>
 
     <div class="user-block">
       <div class="search">
@@ -54,37 +54,27 @@
       </div>
 
       <div class="basket">
-        <a class="btn-basket" href="">Пусто</a>
-      </div>
-
-      <div class="basket-popup">
+        <a class="btn-basket btn-basket-active" href="">2 товара</a>
+        <div class="basket-popup">
         <div class="basket-item">
-          <div class="basket-item-remove">
-            <a href=""><img alt="" src="http://placehold.it/150x100" height="10" width="10"></a>
-          </div>
+          <a class="basket-item-remove" href=""></a>
           <img alt="" class="basket-item-photo" src="img/1.png" height="32" width="32">
           <div class="basket-item-name"><span>Пломбир с апельсиновым джемом</span></div>
-          <div class="basket-item-price"><span>1,5 кг * 200 руб.</span></div>
+          <div class="basket-item-price">1,5 кг *<span>200 руб.</span></div>
           <div class="basket-item-full-price"><span>300 руб.</span></div>
         </div>
 
         <div class="basket-item">
-          <div class="basket-item-remove">
-            <a href=""><img alt="" src="http://placehold.it/150x100" height="10" width="10"></a>
-          </div>
+          <a class="basket-item-remove" href=""></a>
           <img alt="" class="basket-item-photo" src="img/3.png" height="32" width="32">
-          <div class="basket-item-name"><span>Пломбир с апельсиновым джемом</span></div>
-          <div class="basket-item-price"><span>1,5 кг * 200 руб.</span></div>
+          <div class="basket-item-name"><span>Клубничный пломбир с присыпкой из белого шоколада</span></div>
+          <div class="basket-item-price">1,5 кг *<span>200 руб.</span></div>
           <div class="basket-item-full-price"><span>300 руб.</span></div>
         </div>
 
-        <div class="basket-total-price">
-          <span>Итого: 750 руб.</span>
-        </div>
-
-        <div class="basket-btn">
-          <a href="">Оформить заказ</a>
-        </div>
+        <div class="basket-total-price">Итого: 750 руб.</div>
+        <a class="button basket-btn" href="">Оформить заказ</a>
+      </div>
       </div>
     </div>
 
@@ -101,7 +91,7 @@
     <div class="content container clearfix">
       <div class="breadcrumbs">
         <ul>
-          <li><a href="">Главная</a> » </li>
+          <li><a href="index.html">Главная</a> » </li>
           <li><a href="">Каталог</a> » </li>
           <li>Сливочное</li>
         </ul>
@@ -144,65 +134,101 @@
           <a class="filters filter-block btn-submit" href="">Применить</a>
       </div>
       <div class="products">
-        <div class="product-item popup">
-        <img alt="" class="product-image" src="/img/1.png" height="267" width="267">
-        <div class="product-price">310&#8381;<span>/кг</span></div>
-        <a class="product-name" href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-      </div>
+        <div class="product-item">
+        <div class="popup">
+          <img alt="" class="product-image" src="/img/1.png" height="267" width="267">
+          <div class="product-price">310&#8381;<span>/кг</span></div>
+          <a class="product-name" href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <a href="" class="button button-quick-view">Быстрый просмотр</a>
+        </div>
+        </div>
       <div class="product-item">
+        <div class="popup">
         <img alt="" class="product-image" src="/img/2.png" height="267" width="267">
         <div class="product-price">380&#8381;<span>/кг</span></div>
         <a class="product-name" href="">Сливочно-кофейное с кусочками шоколада</a>
+        <a href="" class="button button-quick-view">Быстрый просмотр</a>
+        </div>
       </div>
       <div class="product-item">
+        <div class="popup">
         <img alt="" class="product-image" src="/img/3.png" height="267" width="267">
         <div class="product-price">355&#8381;<span>/кг</span></div>
         <a class="product-name" href="">Сливочно-клубничное с присыпкой из белого шоколада</a>
+        <a href="" class="button button-quick-view">Быстрый просмотр</a>
+        </div>
       </div>
       <div class="product-item">
+        <div class="popup">
         <img alt="" class="product-image" src="/img/4.png" height="267" width="267">
         <div class="product-price">415&#8381;<span>/кг</span></div>
         <a class="product-name" href="">Сливочное крем-брюле с карамельной подливкой</a>
+        <a href="" class="button button-quick-view">Быстрый просмотр</a>
+        </div>
       </div>
       <div class="product-item">
+        <div class="popup">
         <img alt="" class="product-image" src="/img/1.png" height="267" width="267">
         <div class="product-price">310&#8381;<span>/кг</span></div>
         <a class="product-name" href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        <a href="" class="button button-quick-view">Быстрый просмотр</a>
+        </div>
       </div>
       <div class="product-item">
+        <div class="popup">
         <img alt="" class="product-image" src="/img/2.png" height="267" width="267">
         <div class="product-price">380&#8381;<span>/кг</span></div>
         <a class="product-name" href="">Сливочно-кофейное с кусочками шоколада</a>
+        <a href="" class="button button-quick-view">Быстрый просмотр</a>
+        </div>
       </div>
       <div class="product-item">
+        <div class="popup">
         <img alt="" class="product-image" src="/img/3.png" height="267" width="267">
         <div class="product-price">355&#8381;<span>/кг</span></div>
         <a class="product-name" href="">Сливочно-клубничное с присыпкой из белого шоколада</a>
+        <a href="" class="button button-quick-view">Быстрый просмотр</a>
+        </div>
       </div>
       <div class="product-item">
+        <div class="popup">
         <img alt="" class="product-image" src="/img/4.png" height="267" width="267">
         <div class="product-price">415&#8381;<span>/кг</span></div>
         <a class="product-name" href="">Сливочное крем-брюле с карамельной подливкой</a>
+        <a href="" class="button button-quick-view">Быстрый просмотр</a>
+        </div>
       </div>
       <div class="product-item">
+        <div class="popup">
         <img alt="" class="product-image" src="/img/1.png" height="267" width="267">
         <div class="product-price">310&#8381;<span>/кг</span></div>
         <a class="product-name" href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        <a href="" class="button button-quick-view">Быстрый просмотр</a>
+        </div>
       </div>
       <div class="product-item">
+        <div class="popup">
         <img alt="" class="product-image" src="/img/2.png" height="267" width="267">
         <div class="product-price">380&#8381;<span>/кг</span></div>
         <a class="product-name" href="">Сливочно-кофейное с кусочками шоколада</a>
+        <a href="" class="button button-quick-view">Быстрый просмотр</a>
+        </div>
       </div>
       <div class="product-item">
+        <div class="popup">
         <img alt="" class="product-image" src="/img/3.png" height="267" width="267">
         <div class="product-price">355&#8381;<span>/кг</span></div>
         <a class="product-name" href="">Сливочно-клубничное с присыпкой из белого шоколада</a>
+        <a href="" class="button button-quick-view">Быстрый просмотр</a>
+        </div>
       </div>
       <div class="product-item">
+        <div class="popup">
         <img alt="" class="product-image" src="/img/4.png" height="267" width="267">
         <div class="product-price">415&#8381;<span>/кг</span></div>
         <a class="product-name" href="">Сливочное крем-брюле с карамельной подливкой</a>
+        <a href="" class="button button-quick-view">Быстрый просмотр</a>
+        </div>
       </div>
       </div>
       <div class="paginator">
@@ -242,12 +268,21 @@
     </footer>
   </div>
 
-<script>
+ <script>
   var linkSearch = document.querySelector(".btn-search");
   var popupSearch = document.querySelector(".search-popup");
   var searchEdit = popupSearch.querySelector("[name=search-edit]");
   var linkLogin = document.querySelector(".btn-login");
   var popupLogin = document.querySelector(".login-popup");
+  var linkFeedback = document.querySelector(".map-description > a");
+  var popupFeedback = document.querySelector(".feedback-popup");
+  var popupOverlay = document.querySelector(".overlay");
+  var linkClose = document.querySelector(".close");
+  var linkCatalog = document.querySelector(".catalog-sub-menu");
+  var popupSubmenu = document.querySelector(".sub-menu");
+  var linkBasket = document.querySelector(".btn-basket");
+  var popupBasket = document.querySelector(".basket-popup");
+
 
   linkSearch.addEventListener("mouseover", function(event) {
     event.preventDefault();
@@ -260,17 +295,57 @@
     popupLogin.classList.add("login-popup-show");
   });
 
+  linkBasket.addEventListener("mouseover", function(event) {
+    event.preventDefault();
+    popupBasket.classList.add("basket-popup-show");
+  });
+
+  linkFeedback.addEventListener("click", function(event) {
+    event.preventDefault();
+    popupOverlay.classList.add("overlay-show");
+    popupFeedback.classList.add("feedback-popup-show");
+  });
+
+  linkClose.addEventListener("click", function(event){
+    event.preventDefault();
+    if (popupOverlay.classList.contains("overlay-show")) {
+      popupOverlay.classList.remove("overlay-show");
+    }
+  });
+
+  linkCatalog.addEventListener("mouseover", function(event){
+    event.preventDefault();
+    popupSubmenu.classList.add("sub-menu-show");
+    console.log("что то");
+  });
+
+  popupSubmenu.addEventListener("mouseout", function(event){
+    event.preventDefault();
+    if (popupSubmenu.classList.contains("sub-menu-show")) {
+      popupSubmenu.classList.remove("sub-menu-show");
+    }
+  });
+
   window.addEventListener("keydown", function(event) {
   if (event.keyCode === 27) {
     if (popupSearch.classList.contains("search-popup-show")) {
       popupSearch.classList.remove("search-popup-show");
     }
+    if (popupBasket.classList.contains("basket-popup-show")) {
+      popupBasket.classList.remove("basket-popup-show");
+    }
+
     if (popupLogin.classList.contains("login-popup-show")) {
       popupLogin.classList.remove("login-popup-show");
+    }
+    if (popupFeedback.classList.contains("feedback-popup-show")) {
+      popupFeedback.classList.remove("feedback-popup-show");
+    }
+    if (popupOverlay.classList.contains("overlay-show")) {
+      popupOverlay.classList.remove("overlay-show");
     }
   }
 });
 </script>
-
 </body>
 </html>
