@@ -300,18 +300,6 @@
     popupBasket.classList.add("basket-popup-show");
   });
 
-  linkFeedback.addEventListener("click", function(event) {
-    event.preventDefault();
-    popupOverlay.classList.add("overlay-show");
-    popupFeedback.classList.add("feedback-popup-show");
-  });
-
-  linkClose.addEventListener("click", function(event){
-    event.preventDefault();
-    if (popupOverlay.classList.contains("overlay-show")) {
-      popupOverlay.classList.remove("overlay-show");
-    }
-  });
 
   linkCatalog.addEventListener("mouseover", function(event){
     event.preventDefault();
