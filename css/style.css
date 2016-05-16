@@ -71,6 +71,18 @@ a{
   border-radius: 5px;
 }
 
+.edit:hover{
+  border-color: #999999;
+  box-shadow: inset 0 0 0 1px #999999;
+}
+
+
+.edit:focus {
+  border-color: #8fbdec;
+  box-shadow: inset 0 0 0 1px #8fbdec;
+  outline: none;
+}
+
 /* Псевдоэлементы с изображениями нужны только для предзагрузки картинок, чтобы они уже были в кеше в момент переключения слайдов и сразу отображались */
 
 .site-wrapper:before,
@@ -131,18 +143,30 @@ a{
   font-size: 16px;
   font-weight: bold;
   display: inline-block;
-  margin-right: 8px;
+  margin-right: -5px;
   position: relative;
+  padding: 10px 15px;
+  border-radius: 20px;
 }
 
 .main-menu > li:nth-child(3n){
   margin-right: 0px;
-  margin-left: 15px
+  margin-left: 0px;
 }
 
-.catalog-sub-menu{
-  padding: 10px 15px;
-  border-radius: 20px;
+
+.main-menu > li:hover{
+  background: #f8f7f4;
+}
+
+.main-menu > li:active{
+  background: #f8f7f4;
+  box-shadow: inset 0 2px 2px 0px #696969;
+}
+
+.main-menu > li:hover a{
+  color: black;
+  text-decoration: none;
 }
 
 .catalog-sub-menu:hover{
@@ -213,6 +237,11 @@ a{
 
 .sub-menu a:active{
   background: #f6b5a5;
+}
+
+.catalog-sub-menu:hover .sub-menu-active{
+  background: #d07058;
+  color: white;
 }
 
 .user-block{
@@ -329,6 +358,14 @@ a{
   border-radius: 5px;
   box-shadow: 0 20px 20px 0px rgba(0,0,0, 0.4);
   z-index: 1;
+}
+
+.login-popup a:hover{
+  color: red;
+}
+
+.login-popup a:active{
+  color: red;
 }
 
 .edit-login-email{
@@ -677,12 +714,19 @@ a{
   margin-bottom: 10px;
   color: white;
   vertical-align: middle;
-
 }
 
 .breadcrumbs li{
   font-size: 14px;
   display: inline;
+}
+
+.breadcrumbs a:hover{
+  color: #ffbc9e;
+}
+
+.breadcrumbs a:active{
+  color: #ffbc9e;
 }
 
 /* filter */
@@ -1026,6 +1070,14 @@ input[type="checkbox"]:disabled:checked + label::after {
   vertical-align: top;
 }
 
+.product-name:hover{
+  color: #ffbc9e;
+}
+
+.product-name:active{
+  color: #ffbc9e;
+}
+
 .popup:hover{
   background: rgba(255,255,255, 0.3);
   position: absolute;
@@ -1041,7 +1093,7 @@ input[type="checkbox"]:disabled:checked + label::after {
   display: none;
 }
 
-.product-item:hover .button-quick-view{
+.popup:hover .button-quick-view{
   display: block;
   margin: 0px auto;
   margin-top: 15px;
@@ -1051,7 +1103,7 @@ input[type="checkbox"]:disabled:checked + label::after {
   padding: 10px 15px;
 }
 
-.product-item:hover .product-price{
+.popup:hover .product-price{
   left: 10px;
   top: 145px;
 }
@@ -1089,6 +1141,7 @@ input[type="checkbox"]:disabled:checked + label::after {
   font-size: 30px;
   font-weight: bold;
 }
+
 .product-name{
   display: block;
   text-align: center;
@@ -1452,6 +1505,14 @@ input[type="checkbox"]:disabled:checked + label::after {
   margin-left: 80px;
   font-size: 0px;
   position: relative;
+}
+
+.main-footer a:hover{
+  color: #ffbc9e;
+}
+
+.main-footer a:active{
+  color: #ffbc9e;
 }
 
 .footer-menu ul{
