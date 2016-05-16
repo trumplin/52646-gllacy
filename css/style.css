@@ -1392,47 +1392,64 @@ input[type="checkbox"]:disabled:checked + label::after {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.footer-social{
+.social {
+  position: relative;
   float: left;
-  font-size: 0px;
-  margin-top: -6px;
+  width: 200px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 0;
+
+  -webkit-transform: translate(3px);
+          transform: translate(3px);
 }
 
-.social-btn{
-  margin-right: 10px;
+.social-btn {
   display: inline-block;
+  width: 31px;
+  height: 31px;
+  margin-right: 18px;
+  vertical-align: top;
+  opacity: 0.8;
   border-radius: 50%;
-  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.5);
-  width: 39px;
-  height: 39px;
-  text-indent: -1000px;
+  box-shadow: inset 0 0 2px 0 #ffffff,
+              0 0 0 3px rgba(255, 255, 255, 0.5);
+  background: transparent url("../img/sprite.png") no-repeat;
+  opacity: 0.8;
 }
 
-.social-btn:nth-child(4){
-  margin-right: 0px;
+.social-btn:hover {
+  box-shadow: inset 0 0 2px 0 #ffffff,
+              0 0 0 5px rgba(255, 255, 255, 0.7);
+  opacity: 1;
 }
 
-.social-btn-tw{
-  background:  url("../img/twitter.png") no-repeat 50% 50%;
+.social-btn:active {
+  box-shadow: inset 0 2px 1px 0 #888888,
+              0 0 0 5px rgba(255, 255, 255, 0.7);
 }
 
-.social-btn-inst{
-  background:  url("../img/instagram.png") no-repeat 50% 50%;
+.social-btn--twitter {
+  background-position: -11px -954px;
 }
 
-.social-btn-fb{
-  background:  url("../img/fb.png") no-repeat 50% 50%;
+.social-btn--insta {
+  background-position: -10px -902px;
 }
 
-.social-btn-vk{
-  background:  url("../img/vk.png") no-repeat 50% 50%;
+.social-btn--fb {
+  background-position: -10px -850px;
+}
+
+.social-btn--vk {
+  background-position: -10px -1006px;
 }
 
 .footer-menu{
   float: left;
   margin: 0px;
-  margin-top: -9px;
-  margin-left: 94px;
+  margin-top: -7px;
+  margin-left: 80px;
   font-size: 0px;
   position: relative;
 }
