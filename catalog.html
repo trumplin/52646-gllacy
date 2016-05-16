@@ -107,86 +107,44 @@
         </ul>
       </div>
       <div class="h1">Сливочное мороженое</div>
-      <div class="cat-filters">
-        <form action="#">
-          <div class="sort-by">
+      <div class="cat-filters clearfix">
+          <div class="filters sort-by">
             <h3>Сортировка</h3>
-            <div class="sort-by-block">
-              <select name="sort-by" id="sort-by">
-              <option value="by-popular">по популярности</option>
-              <option value="by-price">по цене</option>
-            </select>
+            <div class="filter-block sort-by-block">
+              по популярности
             </div>
           </div>
-          <div class="sort-price">
-            <h3>Цена</h3>
-            <div class="sort-price-block">
-              <input type="range" name="sort-price" id="sort-price">
+          <div class="filters sort-price">
+            <h3>Цена 100 руб. - 500 руб.</h3>
+            <div class="filter-block sort-price-block">
+              <div class="sort-price-slider"></div>
             </div>
           </div>
 
-          <div class="sort-fat">
+          <div class="filters sort-fat ">
             <h3>Жирность</h3>
-            <div class="sort-fat-block">
-              <div class="sort-fat-radio">
-                <input type="radio" name="fat" id="sort-fat1" value="0">
-                <label for="sort-fat1">0 %</label>
-              </div>
-
-              <div class="sort-fat-radio">
-                <input type="radio" name="fat" id="sort-fat2" value="10" checked>
-                <label for="sort-fat2">До 10 %</label>
-              </div>
-
-              <div class="sort-fat-radio">
-                <input type="radio" name="fat" id="sort-fat3" value="30">
-                <label for="sort-fat3">До 30 %</label>
-              </div>
-
-              <div class="sort-fat-radio">
-                <input type="radio" name="fat" id="sort-fat4" value="over">
-                <label for="sort-fat4">Свыше 30 %</label>
-              </div>
+            <div class="filter-block sort-fat-block">
+              <div class="sort-fat-radio">0 %</div>
+              <div class="sort-fat-radio radio-active">до 10 %</div>
+              <div class="sort-fat-radio">до 30 %</div>
+              <div class="sort-fat-radio">выше 30 %</div>
             </div>
           </div>
 
-          <div class="sort-extender">
+          <div class="filters sort-extender">
             <h3>Наполнители</h3>
-            <div class="sort-extender-block">
-              <div class="sort-extender-checkbox">
-                <input type="checkbox" name="sort-extender" id="sort-extender1" checked>
-                <label for="sort-extender1">Шоколадные</label>
-              </div>
-
-              <div class="sort-extender-checkbox">
-                <input type="checkbox" name="sort-extender" id="sort-extender2" checked>
-                <label for="sort-extender2">Сахарные присыпки</label>
-              </div>
-
-              <div class="sort-extender-checkbox">
-                <input type="checkbox" name="sort-extender" id="sort-extender3">
-                <label for="sort-extender3">Фрукты</label>
-              </div>
-
-              <div class="sort-extender-checkbox">
-                <input type="checkbox" name="sort-extender" id="sort-extender4">
-                <label for="sort-extender4">Сиропы</label>
-              </div>
-
-              <div class="sort-extender-checkbox">
-                <input type="checkbox" name="sort-extender" id="sort-extender5">
-                <label for="sort-extender5">Джемы</label>
-              </div>
+            <div class="filter-block sort-extender-block">
+              <div class="sort-extender-checkbox checkbox-active">шоколадные</div>
+              <div class="sort-extender-checkbox checkbox-active">сахарные присыпки</div>
+              <div class="sort-extender-checkbox">фрукты</div>
+              <div class="sort-extender-checkbox">сиропы</div>
+              <div class="sort-extender-checkbox">джемы</div>
             </div>
           </div>
-
-          <div class="btn-submit">
-            <input type="submit" value="Применить">
-          </div>
-        </form>
+          <a class="filters filter-block btn-submit" href="">Применить</a>
       </div>
       <div class="products">
-        <div class="product-item">
+        <div class="product-item popup">
         <img alt="" class="product-image" src="/img/1.png" height="267" width="267">
         <div class="product-price">310&#8381;<span>/кг</span></div>
         <a class="product-name" href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -249,9 +207,9 @@
       </div>
       <div class="paginator">
         <a class="prev" href="#prev"></a>
-        <a href="#1">1</a>
+        <a class="active" href="#1">1</a>
         <a href="#2">2</a>
-        <a class="active" href="#3">3</a>
+        <a href="#3">3</a>
         <a href="#4">4</a>
         <a href="#5">5</a>
         <a class="next" href="#next"></a>
